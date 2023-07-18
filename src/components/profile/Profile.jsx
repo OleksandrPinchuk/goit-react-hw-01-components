@@ -1,31 +1,32 @@
 import PropTypes from 'prop-types';
+import {profile, description, avatarImg, name, list, item, identification, adress, label, quantity } from './Profile.module.css'
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
-            <div className="profile">
-                <div className="description">
+            <div className={profile}>
+                <div className={description}>
                     <img
                         src={avatar}
                         alt="User avatar"
-                        className="avatar"
+                        className={avatarImg}
                     />
-                <p className="name">{username}</p>
-                    <p className="tag">@{tag}</p>
-                    <p className="location">{location}</p>
+                <p className={name}>{username}</p>
+                    <p className={identification}>@{tag}</p>
+                    <p className={adress}>{location}</p>
                 </div>
 
-                <ul className="stats">
-                    <li>
-                        <span className="label">Followers</span>
-                        <span className="quantity">{stats.followers}</span>
+                <ul className={list}>
+                    <li className={item}>
+                        <span className={label}>Followers</span>
+                        <span className={quantity}>{stats.followers}</span>
                     </li>
-                    <li>
-                        <span className="label">Views</span>
-                        <span className="quantity">{stats.views}</span>
+                    <li className={item}>
+                        <span className={label}>Views</span>
+                        <span className={quantity}>{stats.views}</span>
                     </li>
-                    <li>
-                        <span className="label">Likes</span>
-                        <span className="quantity">{stats.likes}</span>
+                    <li className={item}>
+                        <span className={label}>Likes</span>
+                        <span className={quantity}>{stats.likes}</span>
                     </li>
                 </ul>
             </div>

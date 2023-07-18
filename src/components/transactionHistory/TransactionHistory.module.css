@@ -1,0 +1,35 @@
+.chart {
+    width: 320px;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px 1px rgba(138, 130, 130, 0.75);
+        -webkit-box-shadow: 5px 5px 8px 1px rgba(138, 130, 130, 0.75);
+        -moz-box-shadow: 5px 5px 8px 1px rgba(138, 130, 130, 0.75);
+    color: rgb(115, 115, 115);
+    text-align: start;
+    margin-bottom: 40px;
+}
+
+.header {
+    background-color: rgb(99, 186, 237);
+}
+
+.text {
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+.nuber {
+    padding: 4px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.line:nth-child(2n) {
+    background-color: rgb(230, 230, 230);
+}
